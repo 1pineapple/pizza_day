@@ -1,0 +1,11 @@
+<template name="groupsPage">
+<div class="groups ">
+    <div class="group">
+    {{#each groups}}
+    {{> groupsItem}}
+    {{/each}}
+    </div>
+    <div id="g"></div>
+     <a href="{{pathFor 'groupAdd'}} " class="add btn btn-primary">Add group</a>
+    </div>
+</template>

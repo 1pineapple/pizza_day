@@ -1,0 +1,68 @@
+<template name="groupPage">
+<div class="item">
+      {{# if owner}}
+     <div class="accordion" id="accordion3">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+    <a class="adduser btn btn-primary" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo">Add or Delete User</a>
+        <a class=" btn btn-primary" data-toggle="collapse" data-parent="#accordion3" href="#collapseTree" >Create event</a>
+         </div>
+        <div id="collapseTwo" class="accordion-body collapse ">
+      <div class="accordion-inner">
+          <form class="main form page">
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="#email" class="control-label">Email</label>
+            <input type="text" placeholder="Enter user email" id="email" class="form-control">
+        </div>
+        <a class="add btn btn-primary">Add</a>
+        <a class="delete btn btn-primary">Delete</a>
+      </div>
+  </form>
+          </div>
+    </div>
+       <div id="collapseTree" class="accordion-body collapse ">
+      <div class="accordion-inner">
+          <form class="main form page">
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="#name" class="control-label">Name</label>
+            <input type="text" placeholder="Enter name event" id="name" class="form-control">
+        </div>
+        <a class="addevent btn btn-primary">Create</a>
+      </div>
+  </form>
+          </div>
+    </div>
+      </div>
+    </div>
+    {{else}}
+   <a class="unsubscribe btn btn-primary">Unsubscribe</a>
+    {{/if}}
+    </div>
+    <div class="menu">
+    <ul class="nav nav-tabs">
+  <li class="active"><a href="#event" data-toggle="tab">Events</a></li>
+        <li><a href="#cupon" data-toggle="tab">Cupon</a></li>
+  <li><a href="#menu" data-toggle="tab">Menu</a></li>
+    </ul>
+<div class="tab-content">
+    <div class="tab-pane" id="menu">
+  <a href="{{pathFor 'menuAdd' _id=this._id }} " class="btn btn-primary">Add Item</a>
+    <div id="g"></div>
+    {{#each menu}}
+    {{> menuItem }}
+    {{/each}}
+    <div id="g"></div>
+    <p>Price: {{cost}}$<a class="accept btn btn-primary">Accept</a></p>
+    </div>
+     <div class="tab-pane active" id="event">
+         <span>Name</span> <span2>Status</span2>
+         {{#each event}}
+         {{> eventsItems }}
+         {{/each}}
+    </div>
+     <div class="tab-pane" id="cupon"></div>
+    </div>
+</div>
+</template>

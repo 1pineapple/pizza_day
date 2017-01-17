@@ -1,0 +1,11 @@
+<template name="menuPage">
+<div class="menu">
+        <a href="{{pathFor 'menuAdd'}} " class="btn btn-primary">Add Item</a>
+    <div id="g"></div>
+    {{#each menu}}
+    {{> menuItem}}
+    {{/each}}
+    <div id="g"></div>
+    <p>Price: {{cost}}$<a class="accept btn btn-primary">Accept</a></p>
+</div>
+</template>

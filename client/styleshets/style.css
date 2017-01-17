@@ -1,0 +1,293 @@
+#event{
+    font-size: 17px;
+}
+#event span{
+    margin-left: 10px;
+}
+#event span2{
+    margin-left: 70px;
+}
+.item{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.item k{
+    color: crimson;
+    margin-left: 20px;
+}
+.navbar{
+    height: 84px;
+background-color: white;}
+.navbar .navbar-brand{
+    font-weight: bold;
+    font-family: Time New Romans,sans-serif;
+     margin: auto;
+    font-size: 40px;
+   color: firebrick;
+}
+.navbar .navbar-brand:hover{
+    color: firebrick;
+     letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-brand:visited{
+     color: firebrick;
+}
+.navbar li{
+   color:black;
+font-weight: bold;
+    font-size: 1.5em;
+font-family: Helvetica,sans-serif;
+}
+.collapse .navbar-nav {
+    font-size: 25px;
+}
+.navbar .navbar-header{
+    margin: 10px;
+}
+body{
+    background-image: url('http://previews.123rf.com/images/ewanew/ewanew1603/ewanew160300034/53128956-Pizza-Pizza-ingredients-Vector-seamless-pattern-background--Stock-Vector.jpg')
+}
+#j{
+    font-size: 26px;
+}
+#f{
+    font-size: 20px;
+}
+.col-sm-4 .go{
+    display: inline-block;
+    float:right;
+}
+.col-sm-4 .subscribe{
+    display: inline-block;
+    float:right;
+}
+.col-sm-4 .delete{
+    margin-left: 10px; 
+}
+.item .unsubscribe{
+    margin-bottom: 10px;
+}
+.items p{
+    margin-top: 10px;
+}
+.groups .add{
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.grid-block,.menu,.groups,.modal-body,.item, .event {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+.groups {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .groups:before, .groups:after {
+    content: "";
+    display: table; }
+  .groups:after {
+    clear: both; }
+.group {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .group:before, .group:after {
+    content: "";
+    display: table; }
+  .group:after {
+    clear: both; }
+.menu {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .menu:before, .menu:after {
+    content: "";
+    display: table; }
+  .menu:after {
+    clear: both; }
+.menu .post-content sp{
+    margin-right: 10px;
+    display: block;
+    float: right;
+}
+.menu .post-content .plus{
+    color: white;
+    display: inline-block;
+    float: right;
+}
+.menu .post-content .minus{
+     margin-right: 10px;
+    color: white;
+    display: inline-block;
+    float: right;
+}
+.menu .post-content .delete{
+    margin-left: 10px;
+    color: white;
+    display: inline-block;
+    float: right;
+}
+.menu .post-content span2{
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+     display: inline-block;
+    float: right;
+}
+.menu p{
+    margin-bottom: auto;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.menu .accept{
+    display: inline-block;
+    float: right;
+}
+.menu .a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#g{
+    border: 2px solid silver;
+}
+ @-webkit-keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.jumbotron{
+    background-color: white;
+  text-align: center;
+}
+.jumbotron h2{
+  font-size: 60px;
+  font-weight: 100;
+}
+.loading {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.alert {
+          animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  width: 250px;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+  pointer-events: auto;
+}
